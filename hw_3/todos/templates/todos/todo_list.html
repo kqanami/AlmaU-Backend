@@ -1,0 +1,6 @@
+{% for todo in todos %}
+    <h2><a href="{% url 'todo-detail' todo.pk %}">{{ todo.title }}</a></h2>
+    <p>{{ todo.description }}</p>
+    <a href="{% url 'todo-delete' todo.pk %}">Удалить</a>
+{% endfor %}
+<a href="{% url 'todo-create' %}">Добавить новое задание</a>

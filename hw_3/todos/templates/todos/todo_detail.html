@@ -1,0 +1,5 @@
+<h1>{{ object.title }}</h1>
+<p>{{ object.description }}</p>
+<p>Дата выполнения: {{ object.due_date }}</p>
+<p>Статус: {% if object.status %}✅ Выполнено{% else %}❌ Не выполнено{% endif %}</p>
+<a href="{% url 'todo-delete' object.pk %}">Удалить</a>

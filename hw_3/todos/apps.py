@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class TttConfig(AppConfig):
+class TodosConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'ttt'
+    name = 'todos'
